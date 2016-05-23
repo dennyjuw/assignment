@@ -1,0 +1,28 @@
+
+To run from project:
+
+1. Run 'npm install' in root 'test' folder
+
+2. Run 'gulp' (If 'gulp' command throws an error, try installing it globally with 'npm install -g gulp')
+
+
+===========================================================================================
+
+Notes:
+
+- I have added simple dropdown menu on user section on top header - I've added some styles of what I thought look fit for the page
+
+- I have added some help text popup on the question mark icons - again styling is what I thought would look fit in the page
+
+- User actions are all added with jQuery, animation sliding is done with CSS.
+
+- Managed portfolio link is opened by default, clicking on it will close the underlaying investment details.
+
+- Tested in Firefox, Chrome, Chrome with ipad device mode (both orientation, landscape & portrait). I've adjusted some font size on the portrait mode to accomodate for narrower width
+
+- Used Roboto Condensed font, as I felt that it is better match to the mockup.
+
+- Icons on the left navigation, I used chevron from Font Awesome for the test. This could be easily replaced with the correct icons provided I have the PSD.
+
+- Using grid system front bootstrap.css
+
