@@ -1,0 +1,83 @@
+@import 'variables';
+
+.table {
+	width:100%;
+
+	.table-row {
+		@include clearfix;
+
+		font-size:13px;
+		padding:10px 0;
+		border-bottom:solid $grey5 1px;
+
+		@media #{$medium-screen-min} {
+			font-size: 14px;
+		}
+
+		&:nth-child(1) {
+			border-top:solid $grey5 1px;
+		}
+
+		.table-col {
+			float:left;
+			width: 14%; // default column width
+			padding:0 3px;
+
+			@media #{$medium-screen-min} {
+				padding:0 7px;
+			}
+
+			&.narrow {
+				width: 100-(5*14)/100 * 100%;
+			}
+
+			&.wide {
+				width: 100-(3*14)/100 * 100%;
+			}
+
+			&.summary {
+				width: 100-15-25/100 * 100%;
+			}
+
+			&.width-15 {
+				width: 15%;
+			}
+			&.width-25 {
+				width: 25%;
+			}
+		}
+		.table-parent {
+			@include clearfix
+		}
+		.table-info {
+			background: $white;
+			margin:5px 5px 0 5px;
+			position:relative;
+			top:5px;
+			max-height:0px; 
+			overflow: hidden;
+			@include transition(all 0.5s ease-in-out);
+
+			.table-info-row {
+				@include clearfix;
+				
+				padding:10px 0;
+				border-bottom:solid $grey5 1px;
+
+				&:nth-child(1) {
+					border-top:solid $grey5 1px;
+				}
+			}
+
+			&.open {
+				max-height:1000px;
+				overflow-y:hidden;
+			}
+		}
+	}
+
+	i.fa { 
+		font-size:20px;
+		margin-right:5px;
+	}
+}

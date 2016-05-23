@@ -1,0 +1,38 @@
+@import 'variables';
+
+html, body {
+	background: $grey;
+	color: $grey4;
+	font-family:Arial;
+	font-weight:400;
+	margin:0;
+	padding:0;
+}
+
+ul {
+	padding: 0px;
+	li {list-style:none;}
+}
+
+h1 {
+	font-size:30px;
+	font-weight:normal;
+	letter-spacing:-1px;
+
+	@media #{$medium-screen-min} {
+		font-size: 40px;
+	}
+}
+h2 {
+	font-size:26px;
+	font-weight:normal;
+	letter-spacing:-1px;
+
+	@media #{$medium-screen-min} {
+		font-size: 34px;
+	}
+}
+
+a, a:active, a:focus {
+	outline: none;
+}

@@ -1,0 +1,92 @@
+@import 'bourbon';
+@import 'base';
+@import 'variables';
+@import 'table-layout';
+@import 'common';
+
+
+#main-container {
+	max-width: $max-width;
+	min-height:500px;
+	margin: 0px auto;
+	padding: 80px 0 30px 0;
+
+
+	#left-container {
+
+		&.col-sm-2 {
+			padding-left:0px;
+		}
+
+		ul li {
+			font-size:15px;
+			margin-bottom:20px;
+			
+			@media #{$medium-screen-min} {
+				font-size: 20px;
+			}
+
+			&.selected {
+				color:$blue;
+			}
+			
+			&:hover {
+				cursor: pointer;
+				color: $blue;
+
+				ul {
+					color:$grey4;
+				}
+			}
+
+			i.fa {
+				font-size: 15px;
+				margin-right:0px;
+
+				@media #{$medium-screen-min} {
+					font-size: 20px;
+					margin-right:10px;
+				}
+			}
+			
+			ul {
+				@include transition(all 0.5s ease-in-out);
+				
+				margin: 10px 0 0 18px;
+
+				@media #{$medium-screen-min} {
+					margin: 10px 0 0 34px;
+				}
+
+				> li {
+					font-size: 14px;
+					margin-bottom:8px;
+					line-height:18px;	
+					color:$grey4;
+
+					@media #{$medium-screen-min} {
+						font-size: 15px;
+					}
+
+					&.selected {
+						color:$blue;
+					}		
+				}
+			}
+		}
+	}
+
+	#right-container {
+		background: $white;
+	
+		section {
+			@include clearfix;
+
+			margin:30px 0;
+
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}

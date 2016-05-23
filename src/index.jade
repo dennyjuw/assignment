@@ -1,0 +1,186 @@
+doctype html
+html
+	head
+		title= test
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Condensed")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/bundle.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+	body
+
+		header
+			div#main-header
+				div#main-logo
+					a(href="/") 
+						img(src="img/logo.png")
+				div#right-header
+					
+					div#header-user
+						img.menu-icon(src="img/menu-icon.png")
+						span Walter White
+						img.user-icon(src="img/user-icon.png") 
+						div.menu.text-left
+							ul
+								li  #[a(href="") #[i.fa.fa-angle-right] Option 1]
+								li #[a(href="") #[i.fa.fa-angle-right] Option 2]
+								li #[a(href="") #[i.fa.fa-angle-right] Preferences]
+								li #[a(href="") #[i.fa.fa-angle-right] Log out]
+
+		div#main-container
+			div.col-sm-12
+				div#left-container.col-xs-1.col-sm-2.col-md-3
+					ul
+						li #[i.fa.fa-chevron-circle-right] Overview
+						li.selected #[i.fa.fa-chevron-circle-right] Portfolio
+							ul
+								li.selected Portfolio valuation
+								li Asset allocation
+						li #[i.fa.fa-chevron-circle-right] Transactions
+						li #[i.fa.fa-chevron-circle-right] Reports
+						li #[i.fa.fa-chevron-circle-right] Preferences
+				
+				div#right-container.col-sm-10.col-md-9
+					h1 Portfolio valuation #[span.blue-text.roboto-condensed $1,427,124.00]
+					
+					section
+						h2 Cash
+						div.table.text-right
+							div.table-row.bg-grey
+								div.table-col.wide &nbsp;
+								div.table-col % #[strong Rate p.a]
+								div.table-col $ #[strong Balance]
+								div.table-col % #[strong Portfolio]
+							
+							div.table-row
+								div.table-col.wide.text-left 
+									div.portfolio-logo
+									div.portfolio-desc Cash #[br] BSB 123456 Account no. 12345678
+								div.table-col.roboto-condensed 3.00
+								div.table-col.roboto-condensed 500.40
+								div.table-col.roboto-condensed 0.20
+								
+							div.table-row
+								div.table-col.wide.text-left.help-info #[a(href="") Income accrued #[i.fa.fa-question-circle]]
+									div.help-text
+										div This is the help text for #[strong income accrued]. Please update the text to add helpful description on what this terms is about
+								div.table-col.roboto-condensed 3.00
+								div.table-col.roboto-condensed 500.40
+								div.table-col.roboto-condensed 0.20
+								
+							div.table-row.bg-grey
+								div.table-col.wide.text-left #[strong Total cash balance]
+								div.table-col &nbsp;
+								div.table-col.roboto-condensed 0.20%
+								div.table-col.roboto-condensed 0.20%
+								
+
+					section
+						h2 Portfolio
+
+						div.table.text-right
+							div.table-row.bg-grey
+								div.table-col.narrow &nbsp;
+								div.table-col &nbsp;
+								div.table-col $ #[strong Average cost]
+								div.table-col $ #[strong Estimated #[br] gain/loss]
+								div.table-col $  #[strong Market value]
+								div.table-col %  #[strong Portfolio]
+								
+							div.table-row.bg-dark-grey
+								div.table-parent
+									div.table-col.narrow.text-left #[a#portfolio-link(href="") #[i.fa.fa-angle-up] #[strong Managed portfolio]]
+									div.table-col &nbsp;
+									div.table-col.roboto-condensed 472,000.30
+									div.table-col.roboto-condensed 1,233.02
+									div.table-col.roboto-condensed 472,000.30
+									div.table-col.roboto-condensed 98.80
+
+								div.table-info.open
+									div.table-info-row
+										div.table-col.narrow.text-left #[strong Underlying investment]
+										div.table-col #[strong Quantity]
+										div.table-col $ #[strong Average cost]
+										div.table-col $ #[strong  Estimated gain/loss]
+										div.table-col $ #[strong  Market value]
+										div.table-col % #[strong Portfolio]
+										
+									div.table-info-row
+										div.table-col.narrow.text-left Managed portfolio cash
+										div.table-col -
+										div.table-col -
+										div.table-col.roboto-condensed 0.00
+										div.table-col.roboto-condensed 72,000.30
+										div.table-col.roboto-condensed 2.80
+										
+									div.table-info-row
+										div.table-col.narrow.text-left.help-info #[a(href="") Income accrued #[i.fa.fa-question-circle]]
+											div.help-text
+												div This is the help text for #[strong income accrued]. Please update the text to add helpful description on what this terms is about
+										div.table-col &nbsp;
+										div.table-col -
+										div.table-col -
+										div.table-col.roboto-condensed 1,000.30
+										div.table-col.roboto-condensed 2.40
+										
+									div.table-info-row
+										div.table-col.narrow.text-left TEN - TEN NET
+										div.table-col.roboto-condensed 1,000
+										div.table-col.roboto-condensed 72,000.30
+										div.table-col.roboto-condensed 0.00
+										div.table-col.roboto-condensed 84,000.30
+										div.table-col.roboto-condensed 10.01
+										
+									div.table-info-row
+										div.table-col.narrow.text-left RHC - RAMSAY
+										div.table-col.roboto-condensed 21,000
+										div.table-col.roboto-condensed 172,000.30
+										div.table-col.roboto-condensed 12,000.00
+										div.table-col.roboto-condensed 190,000.30
+										div.table-col.roboto-condensed 25.20
+										
+									div.table-info-row
+										div.table-col.narrow.text-left ORI - ORICA
+										div.table-col.roboto-condensed 1,000
+										div.table-col.roboto-condensed 136,040.30
+										div.table-col.roboto-condensed 11,234.00
+										div.table-col.roboto-condensed 152,000.30
+										div.table-col.roboto-condensed 23.00
+										
+									div.table-info-row
+										div.table-col.narrow.text-left RRL - REGIS
+										div.table-col.roboto-condensed 1,000
+										div.table-col.roboto-condensed 23,400.30
+										div.table-col.roboto-condensed 12,000.00
+										div.table-col.roboto-condensed 42,000.30
+										div.table-col.roboto-condensed 12.07
+										
+							div.table-row.bg-grey
+								div.table-col.summary.text-left #[strong Total managed portfolio balanced]
+								div.table-col.width-25.roboto-condensed #[strong $472,000.00]
+								div.table-col.width-15.roboto-condensed #[strong 98.90%]
+								
+							div.table-row.bg-grey.text-25
+								div.table-col.summary.text-left Total portfolio valuation
+								div.table-col.width-25.roboto-condensed $472,500.90
+								div.table-col.width-15.roboto-condensed 100.00%
+								
+
+			div.clearfix
+
+		footer.text-right 
+			div
+				div.col-sm-12
+					a(href="") Contact us
+					span.dot-seperator
+					a(href="") Terms of use
+					span.dot-seperator
+					a(href="") Privacy statement
+					span.dot-seperator
+					a(href="") Accessibility
+					span.dot-seperator
+					span &copy; 2015
+				
+		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js")
+		script(type="text/javascript", src="js/main.js")
+	
